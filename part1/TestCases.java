@@ -92,8 +92,12 @@ public class TestCases
    @Test
    public void testSimpleList2()
    {
-      fail("Missing SimpleList2");
-      /* TO DO: Add a new test case. */
+      List<Integer> input =
+	new LinkedList<Integer>(Arrays.asList(new Integer[] {-3, 15, 5, -6}));
+      List<Integer> expected =
+	new ArrayList<Integer>(Arrays.asList(new Integer[] {9, 225, 25, 36}));
+
+      assertEquals(expected, SimpleList.squareAll(input));
    }
 
    @Test
@@ -111,8 +115,7 @@ public class TestCases
    @Test
    public void testBetterLoop3()
    {
-      fail("Missing BetterLoop3");
-      /* TO DO: Write a valid test case where the expected result is false. */
+      assertTrue(!BetterLoop.contains(new int[] {2, 6, 3, 7, 34, -16}, 426));
    }
 
    @Test
@@ -155,7 +158,19 @@ public class TestCases
    @Test
    public void testExampleMap2()
    {
-      fail("Missing ExampleMap2");
-      /* TO DO: Write another valid test case. */
+      List<String> expected = Arrays.asList("Steve Harvey");
+      Map<String, List<Course>> courseListsByStudent = new HashMap<>();
+
+      courseListsByStudent.put("Eric",
+      	Arrays.asList(
+      		new Course("CE 204", 3),
+      		new Course("ME 234", 4),
+      		new Course("BIO 214", 2),
+      		new Course("BMED 214", 2)));
+      courseListsByStudent.put("Steve Harvey",
+      	Arrays.asList(
+      		new Course("CPE 999", 4),
+      		new Course("CSC 999", 5),
+      		new Course("Life", 999)));
    }
 }

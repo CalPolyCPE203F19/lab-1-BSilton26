@@ -14,6 +14,14 @@ class ExampleMap
          in a number of units strictly greater than the unitThreshold.
       */
 
+         for (String student : courseListsByStudentName.keySet())
+         {
+            int totUnits = 0;
+            for (Course course : courseListsByStudentName.get(student))
+               totUnits += course.getNumUnits();
+            if (totUnits > unitThreshold)
+               overEnrolledStudents.add(student);
+         }
       return overEnrolledStudents;      
    }
 }

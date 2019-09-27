@@ -31,7 +31,7 @@ public class TestCases
    @Test
    public void testSimpleIf3()
    {
-      assertEquals(0, SimpleIf.max(2.5, 2.5), DELTA);
+      assertEquals(2.5, SimpleIf.max(2.5, 2.5), DELTA);
    }
 
    @Test

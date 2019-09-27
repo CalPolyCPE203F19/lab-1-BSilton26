@@ -53,6 +53,12 @@ public class TestCases
    }
 
    @Test
+   public void testSimpleLoop4()
+   {
+      assertEquals(10, SimpleLoop.sum(5,5));
+   }
+
+   @Test
    public void testSimpleArray1()
    {
       /* What are those parameters?  They are newly allocated arrays

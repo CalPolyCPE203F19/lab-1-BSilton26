@@ -55,7 +55,7 @@ public class TestCases
    @Test
    public void testSimpleLoop4()
    {
-      assertEquals(10, SimpleLoop.sum(5,5));
+      assertEquals(5, SimpleLoop.sum(5,5));
    }
 
    @Test

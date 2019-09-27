@@ -7,7 +7,7 @@ class SimpleLoop
             for (int i = low; i <= high; i++)
     		  sum += i;
         else 
-        	sum += low * 2;
+        	sum += low;
         return sum;
    }
 }
